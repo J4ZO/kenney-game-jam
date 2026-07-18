@@ -4,12 +4,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody _rb;
-    [SerializeField] private float moveSpeed;
+    [SerializeField] private float moveSpeed = 20f;
     [SerializeField] private float rotationSpeed;
-    
-    
-    [Header("Isometric Settings")]
-    [SerializeField] private float isometricAngle = 45f;
     
     
     private void Start()
@@ -24,9 +20,10 @@ public class PlayerMovement : MonoBehaviour
         _rb.AddRelativeForce(Vector3.forward * (direction  * moveSpeed));
     }
 
-    public void SetSpeed(float speed)
+    public void SetSpeedRotation(float speed, float rotation)
     {
         moveSpeed = speed;
+        rotationSpeed = rotation;
     }
 
     public void Rotation(float rotation)
@@ -37,7 +34,8 @@ public class PlayerMovement : MonoBehaviour
 
     private float GetRotationAngle()
     {
-        Debug.Log("rotation" + transform.eulerAngles.normalized.y);
         return transform.eulerAngles.normalized.y;
     }
+    
+
 }
