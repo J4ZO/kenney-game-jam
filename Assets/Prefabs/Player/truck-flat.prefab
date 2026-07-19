@@ -405,10 +405,36 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c55076f7d2264eb4ab00036d5c99297c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7216387949124354350}
   m_SourcePrefab: {fileID: 100100000, guid: c55076f7d2264eb4ab00036d5c99297c, type: 3}
 --- !u!4 &5964228375170649437 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c55076f7d2264eb4ab00036d5c99297c, type: 3}
   m_PrefabInstance: {fileID: 6147285286652439222}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6453344595566286823 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c55076f7d2264eb4ab00036d5c99297c, type: 3}
+  m_PrefabInstance: {fileID: 6147285286652439222}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7216387949124354350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6453344595566286823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc24a7b0fa3d87439427d12664462e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PigController
+  incrementSize: 0
+  limit: 100
+  incrementMultiplier: 0.25
+  incrementSizeValue: 0.0001
+  barImage: {fileID: 0}
+  loseGame: 0

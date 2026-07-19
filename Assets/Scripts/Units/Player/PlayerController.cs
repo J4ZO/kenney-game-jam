@@ -54,6 +54,11 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Repeat checkpoint");
             StartCoroutine(WaitToSpawn());
         }
+
+        if (other.CompareTag("Level"))
+        {
+            GameManager.Instance.ChangeScene();
+        }
     }
 
     private IEnumerator WaitToSpawn()

@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
-    [SerializeField] private int scene;
 
     public void ChangeScene(int sceneIndex)
     {
@@ -13,14 +12,7 @@ public class LevelController : MonoBehaviour
 
     public void RestartLevel()
     {
+        GameManager.Instance.Restart();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            ChangeScene(scene);
-        }
     }
 }

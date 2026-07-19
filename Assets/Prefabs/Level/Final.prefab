@@ -47,6 +47,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8382760378582462396}
   - component: {fileID: 960050429773081477}
+  - component: {fileID: 4438183947143188740}
   m_Layer: 0
   m_Name: NextLevel
   m_TagString: Untagged
@@ -90,6 +91,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 6.717778, z: 12.702871}
   m_Center: {x: 0, y: 2.858889, z: -3.4127169}
+--- !u!114 &4438183947143188740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5938739295128117505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671c78cb531fe7a4685659266b8d64c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelController
+  scene: 0
 --- !u!1001 &4491396124039934802
 PrefabInstance:
   m_ObjectHideFlags: 0

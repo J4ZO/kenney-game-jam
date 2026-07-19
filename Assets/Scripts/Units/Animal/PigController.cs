@@ -10,6 +10,7 @@ public class PigController : MonoBehaviour
     [SerializeField] private float incrementSizeValue = 0.0001f;
     
     [SerializeField] private Image barImage;
+    public bool loseGame = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +27,10 @@ public class PigController : MonoBehaviour
             incrementSize += Time.deltaTime * incrementMultiplier;
             SetFillAmount(incrementSize);
         }
+        else
+        {
+            loseGame = true;
+        }
     }
 
     private void IncreaseSize()
@@ -36,5 +41,11 @@ public class PigController : MonoBehaviour
     private void SetFillAmount(float fillAmount)
     {
         barImage.fillAmount = fillAmount / limit;
+    }
+
+    public void ResetValues()
+    {
+        barImage.fillAmount = 0f;
+        incrementSize = 0f;
     }
 }
